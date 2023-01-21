@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://kit.fontawesome.com/4d02abcf66.js" crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="whole">
+    <div id="main">
+        <div class="title">
+            <p>Password Generator</p>
+        </div>
+        <div id="display">
+            <input type="text" id="passWord" value="">
+            <div id="copy">
+                <i class="fa-regular fa-copy" onclick="copyPassword()"></i>
+            </div>
+
+            
+        </div>
+     <div id="GeneratorArea">
+        <div id="range">
+      <h3> Character Length 
+        <span id="len"></span>
+      </h3>
+     
+            <input id="rangeBar" onInput="Rangevalue()"type="range" min="8"max="20">
+        </div>
+
+        <div id="checkArea">
+            <div id="chekBoxArea">
+
+                <input class="boxes"type="checkbox">
+                <span id="types">Include Uppercase Letters</span>
+            </div>
+
+            <div id="chekBoxArea">
+                <input class="boxes" type="checkbox" name="">
+                <span id="types">Include Lowercase Letters</span>
+            </div>
+            <div id="chekBoxArea">
+                 <input class="boxes" type="checkbox">
+                 <span id="types">Include Numbers</span>
+                </div>
+            <div id="chekBoxArea"> 
+                <input class="boxes" type="checkbox">
+                <span id="types">Include Symbols</span>
+            </div>
+            <div id="strength" >
+              
+                    <h2 id="str">STRENGTH</h2>
+               
+                <div id="box1">
+                    <h2 id="med"></h2>
+                    <div id="box2">
+                        <div class="root"></div>
+                        <div class="root"></div>
+                        <div class="root"></div>
+                        <div class="root"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="generate" onclick="PassWordGerator()">GENERATE </div>
+        
+              </div>
+        </div>
+     </div>
+
+
+    </div>
+        </div>
+ 
+  <script src="script.js"></script>
+
+</body>
+
+</html>
